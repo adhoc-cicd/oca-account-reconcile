@@ -335,7 +335,7 @@
         <field name="domain">[('journal_id', '=', active_id)]</field>
         <field
             name="context"
-        >{'default_journal_id': active_id, 'search_default_not_reconciled': True, 'view_ref': 'account_reconcile_oca.bank_statement_line_form_reconcile_view'}</field>
+        >{'default_journal_id': active_id, 'search_default_not_reconciled': True, 'view_ref': 'account_reconcile_oca.bank_statement_line_form_reconcile_view', 'skip_account_move_synchronization': True}</field>
         <field name="view_mode">kanban,tree</field>
         <field
             name="view_ids"
